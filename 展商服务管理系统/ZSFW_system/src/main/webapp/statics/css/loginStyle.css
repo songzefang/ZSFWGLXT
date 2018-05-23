@@ -1,0 +1,79 @@
+body {
+FONT-FAMILY: Arial, Helvetica, sans-serif ; font-size:12px;  
+}
+/*****登陆页****/
+		.formLine
+		{
+		background:transparent url(../images/z040.gif) repeat-x 40% bottom;
+		  padding:7px;
+			 text-align:left;
+		}
+		.formdiv
+		{
+		 margin:30px auto;
+		}
+		.backgroundPic
+		{
+		width:700px;
+		}
+.txt_input
+{
+   width:170px;
+}
+.btn-imgg
+{
+float:left;width:300px;
+}
+		.titlestr
+		{
+		background: transparent url(../images/zsfwlogin/z033.gif) no-repeat;
+		line-height:22px;
+		font-size:11px;
+		height:50px;
+		color:#4f4f4f; text-align:center;width:442px;
+		}
+		.formtable
+		{
+		height:125px;
+		 background:transparent url(../images/zsfwlogin/z034.gif) no-repeat;
+		  text-align:center;
+			width:442px;
+		}
+.btn_margin
+{
+ margin-bottom:2px;
+  cursor:pointer;
+}
+div
+{
+ overflow:hidden;
+}
+ /**********Order2.aspx订单提交页面***************************/
+		#canzhanliucheng{  margin-top:10px; border:solid 1px #d9d9d9;}
+#canzhanliucheng{ width:650px; min-height:205px;}
+.MyBIBF_Order{ height:26px; line-height:26px;font-weight:bold;}
+.MyBIBF_Order a.current{ background:#fff; border-top:solid 2px #ff9600; display:block; color:#c60000; height:24px;text-decoration:none;}	
+.MyBIBF a.current{ background:#fff; border-top:solid 2px #ff9600; display:block; color:#c60000; height:24px;}
+.li_2,.li_4,.li_6{ float:left; text-align:center;border-right: solid 1px #d9d9d9; list-style-type:none;padding:0 4px;}
+.li_2
+{
+width:60px;
+}
+._div_bottom
+{
+margin:90px 0 10px 0;
+}
+
+.LeftImageDiv
+{
+width:160px;
+ margin:20px 6px;
+}
+.LeftImageStyle
+{
+  max-width:150px;
+}
+.leftStyle
+{
+width: 160px; margin: 10px 4px 10px 0px; float: left; text-align:center;
+}

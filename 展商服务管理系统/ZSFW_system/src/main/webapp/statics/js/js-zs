@@ -1,0 +1,53 @@
+var MessageWebService=function() {
+MessageWebService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+MessageWebService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return MessageWebService._staticInstance.get_path();},
+UpMessage:function(col,values,product,tname,sessionstr,isCN,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpMessage',false,{col:col,values:values,product:product,tname:tname,sessionstr:sessionstr,isCN:isCN},succeededCallback,failedCallback,userContext); },
+isExisit:function(CompanyName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'isExisit',false,{CompanyName:CompanyName},succeededCallback,failedCallback,userContext); },
+isExisitEn:function(CompanyName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'isExisitEn',false,{CompanyName:CompanyName},succeededCallback,failedCallback,userContext); },
+Message:function(col,values,product,userName,exhibiId,tname,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Message',false,{col:col,values:values,product:product,userName:userName,exhibiId:exhibiId,tname:tname},succeededCallback,failedCallback,userContext); },
+UpdatePreview:function(col,values,product,tname,netId,file,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpdatePreview',false,{col:col,values:values,product:product,tname:tname,netId:netId,file:file},succeededCallback,failedCallback,userContext); },
+UpdatePreviewLink:function(col,values,id,netid,file,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpdatePreviewLink',false,{col:col,values:values,id:id,netid:netid,file:file},succeededCallback,failedCallback,userContext); },
+UpdateOrder:function(values,netid,file,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'UpdateOrder',false,{values:values,netid:netid,file:file},succeededCallback,failedCallback,userContext); },
+DownWord:function(netid,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'DownWord',false,{netid:netid},succeededCallback,failedCallback,userContext); }}
+MessageWebService.registerClass('MessageWebService',Sys.Net.WebServiceProxy);
+MessageWebService._staticInstance = new MessageWebService();
+MessageWebService.set_path = function(value) { MessageWebService._staticInstance.set_path(value); }
+MessageWebService.get_path = function() { return MessageWebService._staticInstance.get_path(); }
+MessageWebService.set_timeout = function(value) { MessageWebService._staticInstance.set_timeout(value); }
+MessageWebService.get_timeout = function() { return MessageWebService._staticInstance.get_timeout(); }
+MessageWebService.set_defaultUserContext = function(value) { MessageWebService._staticInstance.set_defaultUserContext(value); }
+MessageWebService.get_defaultUserContext = function() { return MessageWebService._staticInstance.get_defaultUserContext(); }
+MessageWebService.set_defaultSucceededCallback = function(value) { MessageWebService._staticInstance.set_defaultSucceededCallback(value); }
+MessageWebService.get_defaultSucceededCallback = function() { return MessageWebService._staticInstance.get_defaultSucceededCallback(); }
+MessageWebService.set_defaultFailedCallback = function(value) { MessageWebService._staticInstance.set_defaultFailedCallback(value); }
+MessageWebService.get_defaultFailedCallback = function() { return MessageWebService._staticInstance.get_defaultFailedCallback(); }
+MessageWebService.set_enableJsonp = function(value) { MessageWebService._staticInstance.set_enableJsonp(value); }
+MessageWebService.get_enableJsonp = function() { return MessageWebService._staticInstance.get_enableJsonp(); }
+MessageWebService.set_jsonpCallbackParameter = function(value) { MessageWebService._staticInstance.set_jsonpCallbackParameter(value); }
+MessageWebService.get_jsonpCallbackParameter = function() { return MessageWebService._staticInstance.get_jsonpCallbackParameter(); }
+MessageWebService.set_path("/wss/exhibit/WebServices/MessageWebService.asmx");
+MessageWebService.UpMessage= function(col,values,product,tname,sessionstr,isCN,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.UpMessage(col,values,product,tname,sessionstr,isCN,onSuccess,onFailed,userContext); }
+MessageWebService.isExisit= function(CompanyName,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.isExisit(CompanyName,onSuccess,onFailed,userContext); }
+MessageWebService.isExisitEn= function(CompanyName,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.isExisitEn(CompanyName,onSuccess,onFailed,userContext); }
+MessageWebService.Message= function(col,values,product,userName,exhibiId,tname,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.Message(col,values,product,userName,exhibiId,tname,onSuccess,onFailed,userContext); }
+MessageWebService.UpdatePreview= function(col,values,product,tname,netId,file,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.UpdatePreview(col,values,product,tname,netId,file,onSuccess,onFailed,userContext); }
+MessageWebService.UpdatePreviewLink= function(col,values,id,netid,file,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.UpdatePreviewLink(col,values,id,netid,file,onSuccess,onFailed,userContext); }
+MessageWebService.UpdateOrder= function(values,netid,file,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.UpdateOrder(values,netid,file,onSuccess,onFailed,userContext); }
+MessageWebService.DownWord= function(netid,onSuccess,onFailed,userContext) {MessageWebService._staticInstance.DownWord(netid,onSuccess,onFailed,userContext); }
