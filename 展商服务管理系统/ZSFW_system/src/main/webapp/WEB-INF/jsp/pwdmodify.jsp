@@ -10,7 +10,7 @@
                 <form id="userForm" name="userForm" method="post" action="pwdmodifysave.do">
                     <input type="hidden" name="method" value="savepwd">
                     <!--div的class 为error是验证错误，ok是验证成功-->
-                    <div class="info">${message}</div>
+                    
                     <div class="">
                         <label for="oldPassword">旧密码：</label>
                         <input type="password" name="oldpassword" id="oldpassword" value=""> 
@@ -28,11 +28,11 @@
                     </div>
                     <div class="providerAddBtn">
                         <!--<a href="#">保存</a>-->
-                        <input type="button" name="save" id="save" value="保存" class="input-button">
+                        <input type="submit" name="save" id="save" value="保存" class="input-button">
                     </div>
                 </form>
             </div>
         </div>
     </section>
 <%@include file="./common/foot.jsp" %>
-<script type="text/javascript" src="statics/js/pwdmodify.js"></script>
+<!-- <script type="text/javascript" src="statics/js/pwdmodify.js"></script> -->

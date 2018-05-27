@@ -20,12 +20,12 @@
 	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	 <!-- 扫描包中注解标注的类 -->	
-	<context:component-scan base-package="com.jcz.*" />
+	<context:component-scan base-package="com.qnm" />
 	
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		destroy-method="close">
 		<!-- 数据库基本信息配置 -->
-		<property name="url" value="jdbc:mysql://39.106.19.4:3306/smbms" />
+		<property name="url" value="jdbc:mysql://39.106.19.4:3306/zsfwglxt" />
 		<property name="username" value="root" />
 		<property name="password" value="seeliketuski1." />
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -42,12 +42,12 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 	    <property name="dataSource" ref="dataSource"></property>
 	    <!-- 实体设置短名 -->
-	    <property name="typeAliasesPackage" value="com.jcz.entity"></property>
-	    <property name="mapperLocations" value="classpath:com/jcz/mapper/*Mapper.xml"></property>
+	    <property name="typeAliasesPackage" value="com.qnm.entity"></property>
+	    <property name="mapperLocations" value="classpath:com/qnm/mapper/*Mapper.xml"></property>
 	</bean>
 	
 	<!-- 为所有dao定义bean -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-	    <property name="basePackage" value="com.jcz.dao"></property>
+	    <property name="basePackage" value="com.qnm.mapper"></property>
 	</bean>
 </beans>

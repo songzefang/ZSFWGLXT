@@ -87,7 +87,6 @@
 	          	<c:param name="totalPageCount" value="${page.totalPageCount}"/>
           	</c:import>
   </div>
-</section>
 
 <!--点击删除按钮后弹出的页面-->
 <div class="zhezhao"></div>

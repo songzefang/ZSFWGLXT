@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qnm.mapper.AdminMapper">
+
+	<select id="login" parameterType="com.qnm.entity.Admin" resultType="com.qnm.entity.Admin">
+		SELECT *
+		From admin
+		WHERE adminName = #{adminName} and
+		adminPwd = #{adminPwd}
+	</select>
+
+	<update id="update" parameterType="com.qnm.entity.Admin">
+		UPDATE admin
+		SET `adminName` =
+		#{adminName},
+		`adminPwd` = #{adminPwd}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="delete">
+		delete from admin
+		where id = #{id}
+	</delete>
+
+</mapper>

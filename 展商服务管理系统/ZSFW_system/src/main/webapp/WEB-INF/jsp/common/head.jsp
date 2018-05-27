@@ -15,7 +15,7 @@
     <header class="publicHeader">
         <h1>展商服务管理系统</h1>
         <div class="publicHeaderR">
-            <p><span>下午好！</span><span style="color: #fff21b"> ${userSession.username }</span> , 欢迎你！</p>
+            <p><span>下午好！</span><span style="color: #fff21b"> ${adminSession.adminName }</span> , 欢迎你！</p>
             <a href="logout.do">退出</a>
         </div>
     </header>
@@ -30,10 +30,10 @@
          <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
          <nav>
              <ul class="list">
-              <li ><a href="bill.do">订单管理</a></li>
+              <li ><a href="bill.do">订单合同管理</a></li>
               <li><a href="provider.do">主办方管理</a></li>
-              <li><a href="tolist.do">展商管理</a></li>
-              <li><a href="tolist.do">参展管理</a></li>
+              <li><a href="exhList.do">展商管理</a></li>
+              <li><a href="visList.do">参展管理</a></li>
               <li><a href="pwdmodify.do">密码修改</a></li>
               <li><a href="logout.do">退出系统</a></li>
              </ul>

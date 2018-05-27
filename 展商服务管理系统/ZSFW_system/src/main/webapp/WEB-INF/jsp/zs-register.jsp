@@ -50,7 +50,7 @@
 </head>
 <body>
       <body onresize="setFootHeight()" class="ggzs-enabled">
-    <form method="post" action="http://wss.sportshow.com.cn/wss/exhibit/reg_01.aspx" id="form1">
+    <form method="post" action="zs-add.do" id="form1">
    <div class="aspNetHidden">
 		<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 		<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
@@ -200,7 +200,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                      <span class="nec">*</span><span>公司名称：</span>
                   </div>
                   <div class="divTd2">
-                       <input type="text" class="dt2_input_text" id="txtCompanyName" name="txtCompanyName" value="请输入公司全称（请与公司营业执照一致）" style="text-align:center;color:#a0b4c5;" onfocus="qFont(this)" onblur="AFont(this,&#39;请输入公司全称（请与公司营业执照一致）&#39;,&#39;请输入&#39;),isExite(this)" maxlength="50">
+                       <input type="text" class="dt2_input_text" id="comName" name="comName" value="请输入公司全称（请与公司营业执照一致）" style="text-align:center;color:#a0b4c5;" onfocus="qFont(this)" onblur="AFont(this,&#39;请输入公司全称（请与公司营业执照一致）&#39;,&#39;请输入&#39;),isExite(this)" maxlength="50">
                        <span style="color:red;">必须与营业执照公司名称相同</span>
                   </div>
              </div>
@@ -209,7 +209,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                 <span class="nec">*</span>
                 <span>英文公司名称：</span></div>
                 <div class="divTd2">
-                <input type="text" class="dt2_input_text" id="txtCompanyEn" name="txtCompanyEn" value="如无英文，请填写汉语拼音" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无英文，请填写汉语拼音&#39;,&#39;请输入&#39;),isEnExite(this,&#39;1&#39;)" maxlength="200">
+                <input type="text" class="dt2_input_text" id="comEnglishName" name="comEnglishName" value="如无英文，请填写汉语拼音" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无英文，请填写汉语拼音&#39;,&#39;请输入&#39;),isEnExite(this,&#39;1&#39;)" maxlength="200">
                 <span style="color:red;">如无英文名称，请填写公司拼音</span>
                 </div>
              </div>
@@ -219,7 +219,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                   <span>公司地址：</span>
                 </div>
                 <div class="divTd2">
-                    <select id="txtArea" name="txtArea" class="dt2_input_select" onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,&#39;&#39;)">
+                    <select id="address" name="address" class="dt2_input_select" onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,&#39;&#39;)">
                       <option class="option1" value="">-国家和地区-</option>
                       <option value="中国;+86">中国</option>
                       <option value="中国澳门;+853">中国澳门</option>
@@ -240,7 +240,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                     <span>具体街道：</span>
                     </div>
                     <div class="divTd2">
-                    <input type="text" class="dt2_input_text" id="txtAddr" name="txtAddr" value="如无具体地址，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无具体地址，请填写无&#39;,&#39;请输入&#39;)" maxlength="200">
+                    <input type="text" class="dt2_input_text" id="street" name="street" value="如无具体地址，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无具体地址，请填写无&#39;,&#39;请输入&#39;)" maxlength="200">
                     </div>
                     </div>
                     <div class="divTr">
@@ -249,7 +249,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                     <span>公司英文地址：</span>
                     </div>
                     <div class="divTd2">
-                    <input type="text" class="dt2_input_text" id="txtAddrEn" name="txtAddrEn" value="如无英文，请填写汉语拼音" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无英文，请填写汉语拼音&#39;,&#39;请输入&#39;),isEnExite(this,&#39;2&#39;)" maxlength="200">
+                    <input type="text" class="dt2_input_text" id="comEnglishName" name="comEnglishName" value="如无英文，请填写汉语拼音" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无英文，请填写汉语拼音&#39;,&#39;请输入&#39;),isEnExite(this,&#39;2&#39;)" maxlength="200">
                     </div>
                     </div>
                     <div class="divTr">
@@ -258,7 +258,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                     <span>公司网址：</span>
                     </div>
                     <div class="divTd2">
-                    <input type="text" class="dt2_input_text" id="txtCompHttp" name="txtCompHttp" value="如无公司网址，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无公司网址，请填写无&#39;,&#39;请输入&#39;)" maxlength="50">
+                    <input type="text" class="dt2_input_text" id="website" name="website" value="如无公司网址，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无公司网址，请填写无&#39;,&#39;请输入&#39;)" maxlength="50">
                     </div>
                     </div>
                     <div class="divTr">
@@ -267,7 +267,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                     <span>邮编：</span>
                     </div>
                     <div class="divTd2">
-                    <input type="text" class="dt2_input_text" id="txtPost" name="txtPost" onblur="viewError(this,&#39;_isPost&#39;,&#39;邮编&#39;)" maxlength="50">
+                    <input type="text" class="dt2_input_text" id="postCode" name="postCode" onblur="viewError(this,&#39;_isPost&#39;,&#39;邮编&#39;)" maxlength="50">
                     </div>
                     </div>
                     <div class="divTr">
@@ -276,7 +276,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
                     <span>公司邮箱：</span>
                     </div>
                     <div class="divTd2">
-                    <input type="text" class="dt2_input_text" id="txtCompEmail" name="txtCompEmail" onblur="viewError(this,&#39;_isBox&#39;,&#39;邮箱&#39;)" maxlength="100">
+                    <input type="text" class="dt2_input_text" id="email" name="email" onblur="viewError(this,&#39;_isBox&#39;,&#39;邮箱&#39;)" maxlength="100">
                     </div>
                     </div>
                     <div class="divTr">
@@ -305,7 +305,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>公司简称：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtEasyCompany" name="txtEasyCompany" value="如无公司简称，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无公司简称，请填写无&#39;,&#39;请输入&#39;)" maxlength="50">
+            <input type="text" class="dt2_input_text" id="comAbbreviation" name="comAbbreviation" value="如无公司简称，请填写无" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如无公司简称，请填写无&#39;,&#39;请输入&#39;)" maxlength="50">
             </div>
             </div>
             <div class="divTr">
@@ -314,7 +314,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>公司性质：</span>
             </div>
             <div>
-            <select id="sltCompXZ" name="sltCompXZ" class="dt2_input_text">
+            <select id="comType" name="comType" class="dt2_input_text">
             <option class="option1" value="">-请选择-</option>
             <option value="超市">超市</option>
             <option value="代理商">代理商</option>
@@ -342,7 +342,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>成立日期：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtComeDate" name="txtComeDate" onfocus="qEnFont(this);WdatePicker({lang:&#39;zh-cn&#39;})" value="与营业执照一致" style="text-align:center;color:#a0b4c5;" maxlength="50">
+            <input type="text" class="dt2_input_text" id="establishDate" name="establishDate" onfocus="qEnFont(this);WdatePicker({lang:&#39;zh-cn&#39;})" value="与营业执照一致" style="text-align:center;color:#a0b4c5;" maxlength="50">
             </div>
             </div>
             <div class="divTr">
@@ -351,7 +351,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>员工人数：</span>
             </div>
              <div class="divTd2">
-			<select id="txtEmploy" name="txtEmploy" class="dt2_input_text">
+			<select id="employeeCount" name="employeeCount" class="dt2_input_text">
 				<option class="option1" value="">-请选择-</option>
 				<option value="1-50">1-50</option>
 				<option value="50-100">50-100</option>
@@ -365,12 +365,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
 		</div>
 		<div class="divTr">
 			<div class="divTd1"><span class="nec">*</span><span>注册资金（万元）：</span></div>
-			<div class="divTd2"><input type="text" id="txtDreg" name="txtDreg" class="dt2_input_text" value="与营业执照一致" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;与营业执照一致&#39;,&#39;请输入&#39;)" maxlength="50"></div>
+			<div class="divTd2"><input type="text" id="registeredCapital" name="registeredCapital" class="dt2_input_text" value="与营业执照一致" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;与营业执照一致&#39;,&#39;请输入&#39;)" maxlength="50"></div>
 		</div>
 		<div class="divTr">
 			<div class="divTd1"><span class="nec">*</span><span>所属行业：</span></div>
 			<div>
-				<select id="sltCompHY" name="sltCompHY" onchange="hylb(event,&#39;99,49,50,51,96,54,98,58,59,101,102,62,105,109,65,171,66,170,67,68,69,110,90,111,112,113,114,150,151,152,92,64,115,116,80,117,118,119,120,89,153,121,81,154,122,56,48,124,132,131,123,155,83,130,133,136,134,139,140,141,142,138,143,137,145,147,148,146,128,156,126,149,157,158,129,159,160,161,162,163,164,165,166,167,168,169&#39;)" class="dt2_input_text">
+				<select id="industry" name="industry" onchange="hylb(event,&#39;99,49,50,51,96,54,98,58,59,101,102,62,105,109,65,171,66,170,67,68,69,110,90,111,112,113,114,150,151,152,92,64,115,116,80,117,118,119,120,89,153,121,81,154,122,56,48,124,132,131,123,155,83,130,133,136,134,139,140,141,142,138,143,137,145,147,148,146,128,156,126,149,157,158,129,159,160,161,162,163,164,165,166,167,168,169&#39;)" class="dt2_input_text">
 					<option class="option1" value="">-请选择-</option>
 					<option id="47" value="10协会、赛事、机构">10协会、赛事、机构</option>
 					<option id="17" value="1场馆设施、营造及地坪">1场馆设施、营造及地坪</option>
@@ -386,7 +386,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
 			</div>
 			<div class="divTr">
 			<div class="divTd1"><span class="nec">*</span><span>产品品牌：</span></div>
-			<div class="divTd2"><input type="text" class="dt2_input_text" id="txtProduct" name="txtProduct" value="如无注册品牌，请填写“无”" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如没有注册品牌，请填写“无”&#39;,&#39;请输入&#39;),isEnExite(this,&#39;3&#39;)" maxlength="200"><span style="color:red;">添加更多品牌，请在签约成功后的会刊信息中录入</span></div>
+			<div class="divTd2"><input type="text" class="dt2_input_text" id="productBrand" name="productBrand" value="如无注册品牌，请填写“无”" style="text-align:center;color:#a0b4c5;" onfocus="qEnFont(this)" onblur="AFont(this,&#39;如没有注册品牌，请填写“无”&#39;,&#39;请输入&#39;),isEnExite(this,&#39;3&#39;)" maxlength="200"><span style="color:red;">添加更多品牌，请在签约成功后的会刊信息中录入</span></div>
 		    </div>
 		     <div class="title-div">
                 <div>
@@ -403,7 +403,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>收件公司：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtPostName" name="txtPostName" maxlength="50">
+            <input type="text" class="dt2_input_text" id="receiveCompany" name="receiveCompany" maxlength="50">
             </div>
             <span onclick="copyXi()" class="addNumber">粘贴基本信息</span>
             </div>
@@ -413,7 +413,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>收件地址：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtPostAddr" name="txtPostAddr" maxlength="200">
+            <input type="text" class="dt2_input_text" id="receiveAddress" name="receiveAddress" maxlength="200">
             </div>
             </div>
             <div class="divTr" style="display: none;">
@@ -429,7 +429,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>收件手机：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtPostTelCountry" name="txtPostTelCountry" maxlength="11">
+            <input type="text" class="dt2_input_text" id="receivePhone" name="receivePhone" maxlength="11">
             </div>
             </div>
             <div class="divTr">
@@ -438,7 +438,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
             <span>收件人姓名：</span>
             </div>
             <div class="divTd2">
-            <input type="text" class="dt2_input_text" id="txtPostFaxCountry" name="txtPostFaxCountry" maxlength="50">
+            <input type="text" class="dt2_input_text" id="recipient" name="recipient" maxlength="50">
             </div>
             </div>
             </div>
