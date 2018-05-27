@@ -1,0 +1,458 @@
+body
+{
+	font-size: 12px;
+	background-color: #EFEFEF;
+	font-family:@Microsoft YaHei UI;
+}
+image
+{
+	border-width: 0;
+}
+select
+{
+	font-size: 14px;
+}
+input :hover
+{
+	border-color: #4cbe00;
+}
+.addNumber
+{
+	border: 1px solid #a0b4c5;
+	text-align: center;
+	line-height: 15px;
+	color: Gray;
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 10px;
+	margin: 5px 8px;
+}
+.addNumber:hover
+{
+	background-color: #E7E7E7;
+}
+input
+{
+	line-height: 25px;
+}
+.cont-Tab td
+{
+	line-height: 30px;
+	vertical-align: top;
+	padding: 6px 2px;
+}
+.cont-Tab
+{
+	table-layout: fixed;
+	width: 670px;
+}
+.cont-Tab .td1
+{
+	text-align: right;
+	width: 180px;
+	font-size: 16px;
+	padding-right: 10px;
+	height: 44px;
+	line-height: 44px;
+}
+.cont-Tab .td2
+{
+	width: 475px;
+}
+.cont-Tab .td3
+{
+	width: 300px;
+	vertical-align: middle;
+	font-size: 16px;
+}
+.divtitlewd
+{
+	width: 750px;
+}
+.cont-Tab .td4
+{
+	text-align: right;
+	width: 180px;
+}
+.cont-Tab .td5
+{
+	width: 350px;
+}
+.cont-Tab .td6
+{
+	width: 50px;
+}
+.medialogo
+{
+	margin-top: 5px;
+	max-width: 100%;
+	max-height: 140px;
+	margin-bottom: 5px;
+}
+.cont-Tab-div
+{
+	padding: 10px 0;
+	margin-top: 5px;
+	margin-left:225px;
+}
+.cont-Tab-div2
+{
+	margin: 0px auto;
+	width: 1020px;
+	/*border-bottom: 1px solid #dedede;*/
+}
+.InputName_W
+{
+	height: 26px;
+	width: 100%;
+}
+.dt2_input_text
+{
+	height: 44px;
+	width: 100%;
+	padding: 0 10px;
+	border: 1px solid #f0f0f0;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	border-radius: 3px;
+	font-size: 16px;
+}
+.dt2_input_text1
+{
+	width: 98%;
+	border: 1px double #a0b4c5;
+	height: 24px;
+}
+.dt2_input_select
+{
+	font-size:16px;
+	height: 24px;
+	width: 98px;
+	margin: 0 5px;
+	height: 44px;
+	width: 31%;
+	padding: 0 5px;
+	border: 1px solid #f0f0f0;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	border-radius: 3px;
+}
+.option1
+{
+	color: #a0b4c5;
+}
+.phone1, .phone2, .newphone, .newphone2
+{
+	font-size:16px;
+	width: 30%;
+	margin: 0 3px;
+	text-align: center;
+	ime-mode: disabled;
+	vertical-align: middle;
+	line-height: 20px;
+	height: 44px;
+	padding: 0 10px;
+	border: 1px solid #f0f0f0;
+	box-sizing: border-box;
+	background: #f8f8f8;
+	border-radius: 3px;
+	color: rgb(160, 180, 197);
+	text-align: center;
+	
+}
+.newphone
+{
+	width: 170px;
+}
+.phone1
+{
+	width: 140px;
+}
+.phone2
+{
+	text-align: left;
+	color: Black;
+	width: 65px;
+}
+
+.phone3
+{
+	color: #a0b4c5;
+	border: 1px double #a0b4c5;
+	height: 20px;
+	width: 148px;
+	margin: 0 3px;
+	text-align: center;
+	ime-mode: disabled;
+	vertical-align: middle;
+}
+.mthtphone3
+{
+	color: #a0b4c5;
+	border: 1px double #a0b4c5;
+	height: 20px;
+	width: 156px;
+	margin: 0 3px;
+	text-align: center;
+	ime-mode: disabled;
+	vertical-align: bottom;
+}
+
+
+.newphone2
+{
+	text-align: left;
+	color: Black;
+	width: 168px;
+}
+.nec
+{
+	color: red;
+	font-size: 17px;
+	position: relative;
+	top: 5px;
+	margin: 15px 2px 0 0;
+}
+.title-div
+{
+	position: relative;
+	text-indent: 15px;
+	height: 30px;
+	margin: 18px 0 20px 70px;
+}
+.cont-title
+{
+	float: left;
+	line-height: 30px;
+	font-size: 30px;
+}
+.title-img
+{
+	float: right;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+}
+.title-font
+{
+	color: red;
+	float: left;
+	margin-top: 10px;
+}
+.title-login{float:right;font-size:16px; font-weight:bold}
+.img-div
+{
+	margin: 5px 0;
+}
+.img-div div
+{
+	margin: 0 10px;
+}
+
+.img-title01, .img-title03, .img-title02
+{
+	width: 25%;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+	color: #666;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+}
+.img-top
+{
+	background: url(../images/current-register-top.png) right center no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+}
+.img-top-r
+{
+	background: url(../images/register-top-r.jpg) right center no-repeat;
+}
+.img-t{
+	background: url(../images/current-questionnaire-top.png) right center no-repeat;
+	background-size: cover;
+}
+.img-finish{
+	background: url(../images/current-finish-top.png) right center no-repeat;
+	background-size: cover;
+}
+.img-title03
+{
+	background-position: bottom;
+}
+.tfont
+{
+}
+.tfont span
+{
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid #d5d5d5;
+	color: #666;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 20px;
+	margin-top: 7px;
+}
+
+.img-top span
+{
+	background: #fff;
+	color: #d1202f;
+	border-color: #fff;
+}
+.bottom-bu
+{
+	width: 765px;
+	text-align: center;
+	margin: 10px 0 0 0;
+	padding-bottom: 10px;
+}
+.but
+{
+	background: url(../images/icon_1.jpg) no-repeat;
+	width: 91px;
+	height: 31px;
+}
+.imgButton
+{
+}
+#visitLogin_right_Top
+{
+	width: 560px;
+	float: right;
+	position: absolute;
+	margin-top: 10px;
+}
+#visitLogin_right_cont
+{
+	border: 1px double #98B7CC;
+	width: 1010px;
+	position: relative;
+	margin: 20px 0 ;
+	float: left;
+	min-height:400px;
+}
+
+.imguidiv
+{
+	text-align: center;
+	width: 1020px;
+	color: #98B7CC;
+	margin:auto;
+}
+.font-right
+{
+	text-align: right;
+	padding-right: 20px;
+}
+.font-bz
+{
+	color: Gray;
+}
+
+.f-lo
+{
+	font-size: 40px;
+	margin: 40px;
+	padding-right: 55px;
+}
+.selectwidth
+{
+	border: 1px solid red;
+	width: 68px;
+}
+
+
+.liuPic
+{
+	height: 54px;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.new_select
+{
+	width: 116px;
+}
+.txt_over
+{
+	overflow: scroll;
+	border: 1px solid #a0b4c5;
+	height: 300px;
+}
+.txt_over *
+{
+	overflow: visible;
+}
+.others
+{
+	border: 0;
+    border-bottom: 1px solid #dedede;
+	width: 120px;
+	height: 23px;
+	outline:none;
+}
+.LeftImageDiv
+{
+	width: 160px;
+	margin: 20px 6px;
+}
+.LeftImageStyle
+{
+	max-width: 150px;
+}
+.leftStyle
+{
+	float: left;
+	text-align: center;
+}
+
+#txt_over td
+{
+	line-height: 1px;
+	padding: 2px;
+}
+
+.CW
+{
+	position: relative;
+	bottom: 1px;
+	left: 16px;
+	height: 24px;
+}
+.form-box
+{
+	border-bottom: 1px solid #dedede;
+	width: 900px;
+	margin: auto;
+}
+
+.curlycontainer
+    {
+        border: 3px solid #b8b8b8;
+        width: 1020px!important;
+        font-size: 12px;
+        margin: 20px auto!important;
+    }
+    .curlycontainer .innerdiv
+    {
+        background:url() !important;
+        position: relative;
+        left: 175px;
+        top: 15px;
+        padding: 1px 4px 15px 5px;
+    }
+.newacPP
+{
+	width:1020px;
+	margin:20px auto!important;
+	font-size:16px;
+}

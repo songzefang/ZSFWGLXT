@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jcz.dao.OrganiserDao">
+	<insert id="registerOrganiser" parameterType="com.jcz.entity.Organiser">
+		insert into
+		organiser(account,orgName,orgPwd,mobile,contact,location,email,theme,venueName,venueAddress,boothCount,state)
+		values(#{account},#{orgName},#{orgPwd},#{mobile},#{contact},#{location},#{email},#{theme},
+		#{venueName},#{venueAddress},#{boothCount},#{state})
+	</insert>
+	<select id="loginOrganiser" parameterType="map"
+		resultType="com.jcz.entity.Organiser">
+		select * from organiser where account=#{account} and
+		orgPwd=#{orgPwd}
+	</select>
+
+
+</mapper>

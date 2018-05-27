@@ -1,0 +1,235 @@
+﻿body
+{
+    font-size:12px;
+    border:0px none;
+    font-family:宋体,Arial,Tahoma,Verdana;
+    color:#555;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend,select{
+	padding:0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+ul, ol,li {
+	list-style:none outside none;
+}
+a:link,a:visited,a:active
+{
+ color:#333;
+ text-decoration:none;   
+}
+a:hover
+{
+    text-decoration:underline; color:#003366; 
+}
+img{
+  border:0;
+}
+select
+{
+     	font-size:14px;
+    }
+     div
+     {
+     	 overflow:hidden;
+     	}
+     .cont-Tab-div
+	 {
+	  border:1px double #98B7CC ; padding:10px 0; margin-top:5px;
+	 }
+	 .cont-Tab-div2
+	 {
+	  margin:0px auto;width:680px;
+	 }
+	 .divTr
+	 {
+	 	 margin:10px 0;
+	 	  zoom:1;
+	 	}
+	  .title-img
+	 {
+	  float:right;margin:10px 10px 0 0;cursor:pointer; 
+	 }
+.divTd1,.divTd2
+{
+	float:left;
+	display:inline;
+	}
+	.divTd2
+	{
+		width:330px;
+		}
+		 .title-div
+	 {
+	 	 border-bottom:1px solid #98B7cc;position:relative;text-indent:15px;
+		  height:30px;margin:18px 0; background-color:#F7F9FD;
+	 }
+	  .cont-title
+	 {
+	  float:left;
+		 line-height:30px;
+		 color:#007bbb;
+	 }
+	 .title-font
+	 {
+	 color:#999;
+	 float:left;
+	 margin-top:10px;
+	 }
+	 .title-font-red
+	 {
+	 color:#ff0000;
+	 float:left;
+	 margin-top:10px;
+	 }
+	  .nec
+	 {
+		color:red;
+		 font-size:14px; position:relative;top:1px;
+			margin:12px 2px 0 0;
+	 }
+	 	.dt2_input_text,.p1,.p2,.p3,.txt_name
+	 {
+	   border:1px double #a0b4c5; height:24px;line-height:24px;
+	 }
+	 .dt2_input_text
+	 {
+	 	width:320px;
+	 	}
+	 	 .dt2_input_text:hover, .dt2_input_text:focus,.p1:hover,.p2:hover,.p3:hover,.txt_name:hover
+	 	 {
+	 	  border-color:#4cbe00;
+	 	 	}
+	 	 	.p1,.p2,.p3
+	 	 	{
+	 	 		text-align:center;color:#a0b4c5;
+	 	 		
+	 	 		}
+	 .p1
+	 {
+	 	width:72px;
+	 	}
+	 	.p2
+	 	{
+	 		width:72px;margin:0 6px;
+	 		}
+	 	.p3
+	 	{
+	 		width:156px;
+	 		}
+	 .divTd1
+	 {
+	 	width:200px;
+	     height:24px;
+	     text-align:right;
+	      line-height:24px;
+	 	}
+	 .dt2_input_select
+	 {
+	  border:1px double #a0b4c5;height:24px;width:100px;margin:0 5px;
+	 }
+ .txt_over
+{
+overflow:scroll; border:1px solid #a0b4c5;height:300px;width:320px;
+}
+.txt_over *
+{
+ overflow:visible;
+}
+.leftStyle
+{
+width: 160px; margin: 10px 4px 10px 0px; float:left;  text-align:center;
+}
+.LeftImageDiv
+{
+width:160px;
+ margin:20px 6px;
+}
+.LeftImageStyle
+{
+_width:150px;
+  max-width: 150px;
+}
+#tbList{ border-collapse:collapse;   margin:5px auto; border:1px solid #74B8d9;table-layout:fixed;}
+#tbList th{  height:23px; font-weight:normal; color:#222; font-weight:bold; border-width:0; line-height:23px; text-align:center; background:url(../../images/wbg.gif) #E8F2FB repeat-x 0px -1px;}
+#tbList td
+{
+     text-align:center;   border:solid 1px #74B8d9; 
+		 white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; 
+}
+.txt_name
+{
+	 width:200px;
+	}
+#tbList tr
+{
+ height:18px;
+}
+		.Q3
+		{
+ display:none;
+width:0;
+			}
+	.CW
+	{
+		 position:relative;
+		 bottom:1px;
+		 left:16px;
+		}
+.font-right
+{
+ text-align:right;padding-right:20px;
+}
+ .img-title01,.img-title03,.img-title02
+{
+background: transparent url(../../images/zy-2.jpg) no-repeat top;width:120px;height:35px;float:left; margin:0 3px;color:White;font-size:15px; text-align:center; font-weight:bold; 
+}
+.img-title02
+{
+background: transparent url(../../images/zy-3.jpg) no-repeat bottom;width:120px;height:35px; float:left;
+}
+ .img-title03
+{
+ background-position:bottom;
+}
+.tfont
+{
+  margin-top:10px;
+}
+.liuPic
+{
+margin:6px 0;
+height:34px;
+}
+
+.addNumber
+{
+ border:1px solid #a0b4c5;
+ text-align:center;
+color:Gray;
+ display:inline-block;
+ cursor:pointer;
+ margin:5px 8px; 
+width:120px;height:20px;font-size:14px;line-height:18px;
+}
+.addNumber:hover
+{
+ background-color:#E7E7E7;
+}
+.delb
+{
+ position:relative;
+ cursor:pointer;
+ right:5px;
+}
+
+ #tbList th
+{
+background-color: #e7e7e7; font-weight: bold;
+}
+
+.cerPicBorder
+{
+    border:1px solid #cccccc;  
+}

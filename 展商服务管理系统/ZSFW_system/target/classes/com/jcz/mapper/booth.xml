@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jcz.dao.BoothDao">
+	<insert id="registerBooth" parameterType="com.jcz.entity.Booth">
+		insert into
+		booth(orgId,style,state,boothCode,picture,size,price)
+		values(#{orgId},#{style},#{state},#{boothCode},#{picture},#{size},
+		#{price})
+	</insert>
+	<select id="countBooth" parameterType="int" resultType="int">
+		select
+		count(*) from booth where orgId=#{orgId}
+	</select>
+	<select id="listBooth" parameterType="int" resultType="com.jcz.entity.Booth">
+		select *
+		from booth where orgId=#{orgId} limit #{page},5
+	</select>
+	<select id="count" resultType="int">
+		select count(*) from booth
+	</select>
+	<delete id="delete" parameterType="int">
+		delete FROM booth WHERE id = #{id}
+	</delete>
+	<update id="update" parameterType="com.jcz.entity.Booth">
+		UPDATE booth
+		SET picture= #{picture},
+		size= #{size},
+		style= #{style},
+		price = #{price}
+		WHERE id = #{id};
+	</update>
+	<select id="findById" parameterType="int" resultType="com.jcz.entity.Booth">
+		select * from booth where id=#{id}
+	</select>
+
+</mapper>

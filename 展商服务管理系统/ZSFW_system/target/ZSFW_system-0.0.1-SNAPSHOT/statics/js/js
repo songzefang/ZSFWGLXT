@@ -1,0 +1,38 @@
+var V_Reg_01=function() {
+V_Reg_01.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+V_Reg_01.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return V_Reg_01._staticInstance.get_path();},
+insert_DeVisit_Net:function(_arr,_value,DF,isEn,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'insert_DeVisit_Net',false,{_arr:_arr,_value:_value,DF:DF,isEn:isEn},succeededCallback,failedCallback,userContext); },
+Insert_Visit_Net:function(_arr,_value,DF,isEn,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Insert_Visit_Net',false,{_arr:_arr,_value:_value,DF:DF,isEn:isEn},succeededCallback,failedCallback,userContext); },
+select_DeVisit_Net_Exist:function(number,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'select_DeVisit_Net_Exist',false,{number:number},succeededCallback,failedCallback,userContext); }}
+V_Reg_01.registerClass('V_Reg_01',Sys.Net.WebServiceProxy);
+V_Reg_01._staticInstance = new V_Reg_01();
+V_Reg_01.set_path = function(value) { V_Reg_01._staticInstance.set_path(value); }
+V_Reg_01.get_path = function() { return V_Reg_01._staticInstance.get_path(); }
+V_Reg_01.set_timeout = function(value) { V_Reg_01._staticInstance.set_timeout(value); }
+V_Reg_01.get_timeout = function() { return V_Reg_01._staticInstance.get_timeout(); }
+V_Reg_01.set_defaultUserContext = function(value) { V_Reg_01._staticInstance.set_defaultUserContext(value); }
+V_Reg_01.get_defaultUserContext = function() { return V_Reg_01._staticInstance.get_defaultUserContext(); }
+V_Reg_01.set_defaultSucceededCallback = function(value) { V_Reg_01._staticInstance.set_defaultSucceededCallback(value); }
+V_Reg_01.get_defaultSucceededCallback = function() { return V_Reg_01._staticInstance.get_defaultSucceededCallback(); }
+V_Reg_01.set_defaultFailedCallback = function(value) { V_Reg_01._staticInstance.set_defaultFailedCallback(value); }
+V_Reg_01.get_defaultFailedCallback = function() { return V_Reg_01._staticInstance.get_defaultFailedCallback(); }
+V_Reg_01.set_enableJsonp = function(value) { V_Reg_01._staticInstance.set_enableJsonp(value); }
+V_Reg_01.get_enableJsonp = function() { return V_Reg_01._staticInstance.get_enableJsonp(); }
+V_Reg_01.set_jsonpCallbackParameter = function(value) { V_Reg_01._staticInstance.set_jsonpCallbackParameter(value); }
+V_Reg_01.get_jsonpCallbackParameter = function() { return V_Reg_01._staticInstance.get_jsonpCallbackParameter(); }
+V_Reg_01.set_path("/wsspro/visit/webService/V_Reg_01.asmx");
+V_Reg_01.insert_DeVisit_Net= function(_arr,_value,DF,isEn,onSuccess,onFailed,userContext) {V_Reg_01._staticInstance.insert_DeVisit_Net(_arr,_value,DF,isEn,onSuccess,onFailed,userContext); }
+V_Reg_01.Insert_Visit_Net= function(_arr,_value,DF,isEn,onSuccess,onFailed,userContext) {V_Reg_01._staticInstance.Insert_Visit_Net(_arr,_value,DF,isEn,onSuccess,onFailed,userContext); }
+V_Reg_01.select_DeVisit_Net_Exist= function(number,onSuccess,onFailed,userContext) {V_Reg_01._staticInstance.select_DeVisit_Net_Exist(number,onSuccess,onFailed,userContext); }

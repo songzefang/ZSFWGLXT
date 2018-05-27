@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ <mapper namespace="com.jcz.dao.UserDao">
+ 	 <insert id="add" parameterType="com.jcz.entity.User">
+        insert into user(username,password)
+        values(#{username},#{password}) 
+    </insert>
+    
+    <select id="findByName" parameterType="string" resultType="com.jcz.entity.User">
+        select * from user where username=#{username}
+    </select>
+    <select id="login" parameterType="com.jcz.entity.User" resultType="com.jcz.entity.User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+ </mapper>
