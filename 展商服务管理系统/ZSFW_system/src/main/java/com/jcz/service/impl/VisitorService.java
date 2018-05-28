@@ -14,6 +14,11 @@ public class VisitorService {
 	@Autowired
 	VisitorDao visitorDao;
 	
+	
+	public int addVisitor(Visitor visitor) {
+		return visitorDao.addVisitor(visitor);
+	}
+	
 	public Visitor login(Visitor visitor) {
 		return visitorDao.login(visitor);
 	}

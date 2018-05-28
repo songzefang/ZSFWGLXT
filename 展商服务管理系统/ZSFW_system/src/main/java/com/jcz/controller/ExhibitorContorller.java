@@ -17,17 +17,22 @@ public class ExhibitorContorller {
 	@Autowired
 	ExhibitorService exhibitorService;
 	
-	/*ת��չ�̱���ҳ��*/
+	/*转到展商登陆页面*/
+	@RequestMapping("/zs-login.do")
+	public String zslogin(){
+		return "zs-login";
+	}
+	/*转到展商报名页面*/
 	@RequestMapping("/zs-register.do")
 	public String zsRegister(){
 		return "zs-register";
 	}
 	
-	//ע��
+	//注册
 	@RequestMapping("/zs-add.do")
 	public String add(Exhibitor exhibitor) {
 		System.out.println(exhibitor.toString());
-		return "";
+		return "redirect:zs-login.do";
 	}
 	
 	@RequestMapping("/exhList.do")

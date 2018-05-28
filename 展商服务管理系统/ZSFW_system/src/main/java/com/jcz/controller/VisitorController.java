@@ -2,6 +2,7 @@ package com.jcz.controller;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,21 @@ public class VisitorController {
 	@Autowired
 	VisitorService visitorService;
 	
+	@RequestMapping("/addVisitor")
+	public String addVisitor(Visitor visitor,@Param("txtSf")String sf,@Param("txtCity")String city) {
+		visitor.setLocation(visitor.getLocation()+sf+city);
+		visitorService.addVisitor(visitor);
+		return "redirect:gz-login.do";
+	}
+	
+	@RequestMapping("/gz-register.do")
+	public String gzRegister(){
+		return "gz-register";
+	}
+	@RequestMapping("/gz-login.do")
+	public String gzLogin(){
+		return "gz-login";
+	}
 	
 	@RequestMapping("vislogin")
 	public String login(Visitor visitor) {
@@ -24,7 +40,7 @@ public class VisitorController {
 		if(rVisitor!=null&&rVisitor.getState()!=0) {
 			return "zs-login";
 		}
-		return "";
+		return "redirect:activity.do";
 	}
 	
 	@RequestMapping("/visList.do")

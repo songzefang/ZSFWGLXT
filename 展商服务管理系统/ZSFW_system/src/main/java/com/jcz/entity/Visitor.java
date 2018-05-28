@@ -6,7 +6,7 @@ public class Visitor {
 	private String visPhone;
 	private String visPwd;
 	private String visName;
-	private String title;
+	private String visSex;
 	private String company;
 	private String job;
 	private String location;
@@ -37,11 +37,12 @@ public class Visitor {
 	public void setVisName(String visName) {
 		this.visName = visName;
 	}
-	public String getTitle() {
-		return title;
+	
+	public String getVisSex() {
+		return visSex;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setVisSex(String visSex) {
+		this.visSex = visSex;
 	}
 	public String getCompany() {
 		return company;

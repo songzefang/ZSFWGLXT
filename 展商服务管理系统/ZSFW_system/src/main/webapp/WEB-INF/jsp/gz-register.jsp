@@ -1,29 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+	pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>观众报名-填写基本信息</title>
 
- <!--全局样式路径-->
-    <link href="statics/css/globalcss.css" rel="stylesheet" type="text/css">
-    <script src="statics/js/hm.js"></script>
-    <script src="statics/js/jquery-1.4.2.min.js" type="text/javascript"></script>
-    <!--顶部菜单-->
-    <!--菜单结束-->
-    
-    <link href="statics/css/registration.css" rel="stylesheet" type="text/css">
-    <script src="statics/js/jquery-1.4.2.min(1).js" type="text/javascript"></script>
-    <script src="statics/js/TestFun.js" type="text/javascript"></script>
-    <script src="statics/js/MessageStyle.js" type="text/javascript"></script>
-     <style>
-        div{overflow: hidden;}
-    </style>
-    
-    <script src="statics/js/cookies.js" type="text/javascript"></script>
-    <script src="statics/js/showError.js" type="text/javascript"></script>
-    <script type="text/javascript">
+<!--全局样式路径-->
+<link href="statics/css/globalcss.css" rel="stylesheet" type="text/css">
+<script src="statics/js/hm.js"></script>
+<script src="statics/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<!--顶部菜单-->
+<!--菜单结束-->
+
+<link href="statics/css/registration.css" rel="stylesheet"
+	type="text/css">
+<script src="statics/js/jquery-1.4.2.min(1).js" type="text/javascript"></script>
+<script src="statics/js/TestFun.js" type="text/javascript"></script>
+<script src="statics/js/MessageStyle.js" type="text/javascript"></script>
+<style>
+div {
+	overflow: hidden;
+}
+</style>
+
+<script src="statics/js/cookies.js" type="text/javascript"></script>
+<script src="statics/js/showError.js" type="text/javascript"></script>
+<script type="text/javascript">
         function getfocus(id) {
             document.getElementById(id).select();
         };
@@ -39,20 +42,22 @@
         }
     </script>
 
-    <script type="text/javascript" src="statics/js/AreaSelect3.js"></script>
+<script type="text/javascript" src="statics/js/AreaSelect3.js"></script>
 </head>
 
-    
-   
-<body onresize="setFootHeight()" class="ggzs-enabled">
-    <form method="post" action="" id="form1">
-    <div class="aspNetHidden">
-        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
-        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTQzNTI0MDMyNWRky/D7sWjLQIXuQy9UGtTURqScAdW8CgA4JZFq7PO3buA=">
-    </div>
 
-<script type="text/javascript">
+
+<body onresize="setFootHeight()" class="ggzs-enabled">
+	<form method="post" action="addVisitor" id="form1">
+		<div class="aspNetHidden">
+			<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+			<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT"
+				value=""> <input type="hidden" name="__VIEWSTATE"
+				id="__VIEWSTATE"
+				value="/wEPDwUKLTQzNTI0MDMyNWRky/D7sWjLQIXuQy9UGtTURqScAdW8CgA4JZFq7PO3buA=">
+		</div>
+
+		<script type="text/javascript">
 //<![CDATA[
 var theForm = document.forms['form1'];
 if (!theForm) {
@@ -69,105 +74,105 @@ function __doPostBack(eventTarget, eventArgument) {
 </script>
 
 
-<script src="statics/axd/WebResource.axd" type="text/javascript"></script>
+		<script src="statics/axd/WebResource.axd" type="text/javascript"></script>
 
 
-<script src="statics/axd/ScriptResource-gz.axd" type="text/javascript"></script>
-<script src="statics/axd/ScriptResource(1)-gz.axd" type="text/javascript"></script>
-<script src="statics/js/reg_01.js" type="text/javascript"></script>
-<script src="statics/js/js" type="text/javascript"></script>
-<div class="aspNetHidden">
+		<script src="statics/axd/ScriptResource-gz.axd" type="text/javascript"></script>
+		<script src="statics/axd/ScriptResource(1)-gz.axd"
+			type="text/javascript"></script>
+		<script src="statics/js/reg_01.js" type="text/javascript"></script>
+		<script src="statics/js/js" type="text/javascript"></script>
+		<div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3D52B90B">
-</div>
-    <script type="text/javascript">
+			<input type="hidden" name="__VIEWSTATEGENERATOR"
+				id="__VIEWSTATEGENERATOR" value="3D52B90B">
+		</div>
+		<script type="text/javascript">
 //<![CDATA[
 Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00$ctl00');
 //]]>
 </script>
 
-    <div id="PH" style="height:299px;">
-        <center>
-            <div class="mc_logoBar">
-                <div class="mc_logo">
-                     <div >
-                         <img src="statics/images/gz-register/gzregister.gif" border="0" height="300" width="1200px" complete="complete"></a>
-                     </div>
-                </div>
-            </div>
-            <div id="zhuangtaixinxi" class="mc_state" style="height:44px;vertical-align:middle;line-height:44px;font-size:16px;font-weight:bold;width:1200px;margin-top:-50px;Top:300px;">
-                <div style=" width: 300px; position: absolute;margin-left:660px;">
-                    
-                    <a id="hylnk_GoLogin" href="gz-login.do" style="color: White; width: 148px;
-                        height: 44px; display: block; line-height: 44px; float: right; background: #d1202f;
-                        border-radius: 30px;">参展登录</a>
-                    
-                </div>
-            </div>
-        </center>
-    </div>
-    <div id="PC" style="margin-top: 10px; margin-bottom: 20px;">
-        <div class="welcome" style="width: 930px; float: right; padding: 10px; font-size: 20px;
-            font-weight: bold;">
-            <div>
-                <span id="headText"></span></div>
-        </div>
-        
-    <div id="content_left" class="leftStyle">
-        
-         
-        
+		<div id="PH" style="height: 299px;">
+			<center>
+				<div class="mc_logoBar">
+					<div class="mc_logo">
+						<div>
+							<img src="statics/images/gz-register/gzregister.gif" border="0"
+								height="300" width="1200px" complete="complete"></a>
+						</div>
+					</div>
+				</div>
+				<div id="zhuangtaixinxi" class="mc_state"
+					style="height: 44px; vertical-align: middle; line-height: 44px; font-size: 16px; font-weight: bold; width: 1200px; margin-top: -50px; Top: 300px;">
+					<div style="width: 300px; position: absolute; margin-left: 660px;">
 
-    </div>
-    <div id="content_right" style="width: 1200px; float: right;margin-top:-20px;">
-        
-    <script type="text/javascript" src="statics/js/testbool.js"></script>
-    
-    
-    <div style="clear: both;">
-        
-<style type="text/css">
-    .curlycontainer
-    {
-        border: 3px solid #b8b8b8;
-        width: 766px;
-        font-size: 12px;
-        margin: 0 auto;
-        margin-left:10px;
-    }
-    .curlycontainer .innerdiv
-    {
-        background: transparent url(../images/zhejiao.gif) bottom right no-repeat;
-        position: relative;
-        left: 215px;
-        top: 17px;
-        padding: 1px 4px 15px 5px;
-    }
+						<a id="hylnk_GoLogin" href="gz-login.do"
+							style="color: White; width: 148px; height: 44px; display: block; line-height: 44px; float: right; background: #d1202f; border-radius: 30px;">参展登录</a>
+
+					</div>
+				</div>
+			</center>
+		</div>
+		<div id="PC" style="margin-top: 10px; margin-bottom: 20px;">
+			<div class="welcome"
+				style="width: 930px; float: right; padding: 10px; font-size: 20px; font-weight: bold;">
+				<div>
+					<span id="headText"></span>
+				</div>
+			</div>
+
+			<div id="content_left" class="leftStyle"></div>
+			<div id="content_right"
+				style="width: 1200px; float: right; margin-top: -20px;">
+
+				<script type="text/javascript" src="statics/js/testbool.js"></script>
+
+
+				<div style="clear: both;">
+
+					<style type="text/css">
+.curlycontainer {
+	border: 3px solid #b8b8b8;
+	width: 766px;
+	font-size: 12px;
+	margin: 0 auto;
+	margin-left: 10px;
+}
+
+.curlycontainer .innerdiv {
+	background: transparent url(../images/zhejiao.gif) bottom right
+		no-repeat;
+	position: relative;
+	left: 215px;
+	top: 17px;
+	padding: 1px 4px 15px 5px;
+}
 </style>
-<div id="ContentPlaceHolder1_left_Content_right_zheye1_Panl_div">
-	
-    <div class="curlycontainer">
-        <div class="innerdiv">
-            <p class="MsoNormal">
-	<strong>如有疑问，敬请联系：</strong> 
-</p>
-<p class="MsoNormal">
-	<span>张梅：010-87108881-434</span>&nbsp;&nbsp;<span>zhangmei@sportshow.com.cn</span>
-</p>
-<p>
-	<span style="line-height:1.5;"><span>焦妮：010-87108881-437</span> &nbsp;<span>jiaoni@sportshow.com.cn</span></span>
-</p>
-<p>
-	<span style="line-height:1.5;"><br>
-</span>
-</p>
-        </div>
-    </div>
+					<div id="ContentPlaceHolder1_left_Content_right_zheye1_Panl_div">
 
-</div>
+						<div class="curlycontainer">
+							<div class="innerdiv">
+								<p class="MsoNormal">
+									<strong>如有疑问，敬请联系：</strong>
+								</p>
+								<p class="MsoNormal">
+									<span>张梅：010-87108881-434</span>&nbsp;&nbsp;<span>zhangmei@sportshow.com.cn</span>
+								</p>
+								<p>
+									<span style="line-height: 1.5;"><span>焦妮：010-87108881-437</span>
+										&nbsp;<span>jiaoni@sportshow.com.cn</span></span>
+								</p>
+								<p>
+									<span style="line-height: 1.5;"><br> </span>
+								</p>
+							</div>
+						</div>
 
-    </div>
-    <script type="text/javascript">
+					</div>
+
+				</div>
+				<script type="text/javascript">
 //<![CDATA[
 		var sfArray = new Object();
 		var cities = new Object(); 
@@ -213,217 +218,159 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
 </script>
 
 
-    <div class="cont-Tab-div">
-        <div class="cont-Tab-div2">
-            <div class="title-div">
-                <div>
-                    <h4 class="cont-title">
-                        注册信息</h4>
-                    <span class="title-font">带<span class="nec">*</span>为必填</span>
-                </div>
-            </div>
-            <table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
-                <tbody><tr>
-                    <td class="td1">
-                        <span class="nec">*</span>登录手机：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="txtLoginPhone" name="LoginPhone" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                        <span class="nec">重要信息，请正确填写</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1">
-                        <span class="nec">*</span>登录密码：
-                    </td>
-                    <td class="td2">
-                        <input type="password" id="txtLoginPwd" name="LoginPwd" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1">
-                        <span class="nec">*</span>确认密码：
-                    </td>
-                    <td class="td2">
-                        <input type="password" id="txtLoginPwd2" name="LoginPwd2" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-            </tbody></table>
-            <div class="title-div">
-                <div>
-                    <h4 class="cont-title">
-                        基本信息</h4>
-                    <span class="title-font">带<span class="nec">*</span>为必填</span>
-                </div>
-            </div>
-            <table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
-                <tbody><tr>
-                    <td class="td1"><span class="nec">*</span><span>姓名：</span></td>
-                    <td class="td2">
-                        <input type="text" id="txt_name" name="LinkName" class="dt2_input_text" maxlength="50">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1"><span class="nec">*</span><span>称谓：</span></td>
-                    <td class="td2">
-                        <label id="txtsex">
-                            <input type="radio" name="ChengWei" id="radio1" value="先生" checked="">先生
-                            <input type="radio" name="ChengWei" value="女士">女士
-                        </label>
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1"><span class="nec">*</span><span>单位名称：</span></td>
-                    <td class="td2">
-                        <input type="text" id="companyName" name="CompanyName" class="dt2_input_text" maxlength="100">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        部门：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="txt_Department" name="Department" maxlength="50" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1"><span>职务：</span></td>
-                    <td>
-                        <input type="text" id="txt_JobTitle" name="JobTitle" maxlength="50" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1"><span class="nec">*</span><span>所在地：</span></td>
-                    <td class="td2">
-                        <select id="txtArea" name="txtArea" class="dt2_input_select" onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,&#39;&#39;)"><option class="option1" value="">-国家和地区-</option><option value="中国;+86">中国</option><option value="中国澳门;+853">中国澳门</option><option value="中国台湾;+886">中国台湾</option><option value="中国香港;+852">中国香港</option></select><select id="txtSf" name="txtSf" class="dt2_input_select" onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,this.value,&#39;&#39;);"><option class="option1" value="">-省份-</option></select><select id="txtCity" name="txtCity" class="dt2_input_select" onchange="SetCityNum(this.value);"><option class="option1" value="">-城市-</option></select>
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        公司地址：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="companyAddress" class="dt2_input_text" name="CompAddr" maxlength="50">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        邮编：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="postcode" name="Postcode" class="dt2_input_text" style="ime-mode: disabled;" onkeypress="OnlyNum()" onblur="viewError(this,&#39;_isPost&#39;,&#39;邮编&#39;)"/>
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        公司网址：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="Website" name="Website" maxlength="50" class="dt2_input_text">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-            </tbody></table>
-            <table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
-                <tbody><tr style="display:none">
-                    <td class="td1"><span class="nec">*</span><span>手机：</span></td>
-                    <td class="td2" style="color: #FF0000">
-                        <input type="text" id="txt_LinkMob" name="LinkMob" class="dt2_input_text" style="ime-mode: disabled;
-                            width: 340px;" onkeypress="OnlyNum()" onblur="viewError(this,&#39;_isMob&#39;,&#39;手机&#39;)" maxlength="50">&nbsp;&nbsp;重要信息，正确填写
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        电话：
-                    </td>
-                    <td class="td2">
-                        <input type="text" id="phone01" name="phone01" onfocus="orderNull(this);getfocus(this)" onblur="_showDefaultValue(this,&#39;1&#39;,&#39;fax01&#39;)" onkeyup="getNextObj(&#39;phone01&#39;,&#39;phone02&#39;)" value="国家代码" class="phone1" maxlength="4">
-                        <input type="text" id="phone02" name="phone02" onfocus="orderNull(this);getfocus(this)" onblur="_showDefaultValue(this,&#39;2&#39;,&#39;fax02&#39;)" onkeyup="getNextObj(&#39;phone02&#39;,&#39;phone03&#39;)" value="地区区号" class="phone1" maxlength="4">
-                        <input type="text" id="phone03" name="phone03" onfocus="orderNull(this)" onblur="showDefaultValue(this,&#39;3&#39;)" value="电话号码" class="newphone">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr style="display: none;">
-                    <td class="td1">
-                        传真：
-                    </td>
-                    <td class="td2">
-                        <input type="text" onfocus="orderNull(this);getfocus(this)" onblur="_showDefaultValue(this,&#39;4&#39;,&#39;phone01&#39;)" maxlength="4" onkeyup="getNextObj(&#39;fax01&#39;,&#39;fax02&#39;)" value="国家代码" id="fax01" name="fax01" class="phone1">
-                        <input type="text" id="fax02" name="fax02" onfocus="orderNull(this);getfocus(this)" onblur="_showDefaultValue(this,&#39;5&#39;,&#39;phone02&#39;)" onkeyup="getNextObj(&#39;fax02&#39;,&#39;fax03&#39;)" value="地区区号" class="phone1" maxlength="4">
-                        <input type="text" onfocus="orderNull(this)" onblur="showDefaultValue(this,&#39;6&#39;)" value="传真号码" class="newphone" id="fax03" name="fax03" maxlength="30">
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td1"><span class="nec">*</span><span>邮箱：</span></td>
-                    <td class="td2" style="color: #FF0000">
-                        <input type="text" id="email" name="LinkEmail" class="dt2_input_text" style="ime-mode: disabled;
-                            width: 340px;" maxlength="50" onblur="viewError(this,&#39;_isBox&#39;,&#39;邮箱&#39;)">&nbsp;&nbsp;重要信息，正确填写
-                    </td>
-                    <td class="td3">
-                    </td>
-                </tr>
-            </tbody></table>
-        </div>
-    </div>
-    <div style="text-align: center; margin: 5px 5px 60px 5px;">
-        <img id="Img_V_next" alt="" src="./观众报名-填写基本信息_files/newXYB.jpg" onclick="_testReg_01()">
-    </div>
-    
-    <input id="hidCountryFlag" type="hidden" value="">
-    <script type="text/javascript">PlaceN('姓名','txt_name','是  ','是  ','50');PlaceN('称谓','txtsex@slct_chehu','是  ','是  ','10');PlaceN('单位名称','companyName','是  ','是  ','100');PlaceN('通信地址','companyAddress','否  ','否  ','100');PlaceN('邮编','postcode','否  ','否  ','10');PlaceN('公司网址','Website','否  ','否  ','100');PlaceN('部门','txt_Department','否  ','否  ','50');PlaceN('职务','txt_JobTitle','是  ','否  ','50');PlaceN('手机','txt_LinkMob','是  ','是  ','50');PlaceN('电话','phone01','否  ','否  ','50');PlaceN('传真','fax01','否  ','否  ','50');PlaceN('邮箱','email','是  ','是  ','50');PlaceN('所在地','txtArea','是  ','是  ','');</script><script type="text/javascript"> function Judge(){if(_isNull('txt_name','姓名')){return false;}if(_isNull('txtsex@slct_chehu','称谓')){return false;}if(_isNull('companyName','单位名称')){return false;}if(_isNull('txt_LinkMob','手机')){return false;}if(_isMobile('txt_LinkMob')){return false;}if(_isNull('email','邮箱')){return false;}if(_isBox('email')){return false;}if(_phoneIsNull('txtArea','txtSf','txtCity','所在地')){return false;} return true; } </script>
+				<div class="cont-Tab-div">
+					<div class="cont-Tab-div2">
+						<div class="title-div">
+							<div>
+								<h4 class="cont-title">注册信息</h4>
+								<span class="title-font">带<span class="nec">*</span>为必填
+								</span>
+							</div>
+						</div>
+						<table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
+							<tbody>
+								<tr>
+									<td class="td1"><span class="nec">*</span>登录手机：</td>
+									<td class="td2"><input type="text" id="txtLoginPhone"
+										name="visPhone" class="dt2_input_text"></td>
+									<td class="td3"><span class="nec">重要信息，请正确填写</span></td>
+								</tr>
+								<tr>
+									<td class="td1"><span class="nec">*</span>登录密码：</td>
+									<td class="td2"><input type="password" id="txtLoginPwd"
+										name="visPwd" class="dt2_input_text"></td>
+									<td class="td3"></td>
+								</tr>
+								<tr>
+									<td class="td1"><span class="nec">*</span>确认密码：</td>
+									<td class="td2"><input type="password" id="txtLoginPwd2"
+										name="LoginPwd2" class="dt2_input_text"></td>
+									<td class="td3"></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="title-div">
+							<div>
+								<h4 class="cont-title">基本信息</h4>
+								<span class="title-font">带<span class="nec">*</span>为必填
+								</span>
+							</div>
+						</div>
+						<table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
+							<tbody>
+								<tr>
+									<td class="td1"><span class="nec">*</span><span>姓名：</span></td>
+									<td class="td2"><input type="text" id="txt_name"
+										name="visName" class="dt2_input_text" maxlength="50">
+									</td>
+									<td class="td3"></td>
+								</tr>
+								<tr>
+									<td class="td1"><span class="nec">*</span><span>称谓：</span></td>
+									<td class="td2"><label id="txtsex"> <input
+											type="radio" name="visSex" id="radio1" value="先生"
+											checked="">先生 <input type="radio" name="ChengWei"
+											value="女士">女士
+									</label></td>
+									<td class="td3"></td>
+								</tr>
+								<tr>
+									<td class="td1"><span class="nec">*</span><span>单位名称：</span></td>
+									<td class="td2"><input type="text" id="companyName"
+										name="company" class="dt2_input_text" maxlength="100">
+									</td>
+									<td class="td3"></td>
+								</tr>
+								<tr>
+									<td class="td1"><span>职务：</span></td>
+									<td><input type="text" id="txt_JobTitle" name="job"
+										maxlength="50" class="dt2_input_text"></td>
+									<td class="td3"></td>
+								</tr>
+								<tr>
+									<td class="td1"><span class="nec">*</span><span>所在地：</span></td>
+									<td class="td2"><select id="txtArea" name="location"
+										class="dt2_input_select"
+										onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,&#39;&#39;)"><option
+												class="option1" value="">-国家和地区-</option>
+											<option value="中国;+86">中国</option>
+											<option value="中国澳门;+853">中国澳门</option>
+											<option value="中国台湾;+886">中国台湾</option>
+											<option value="中国香港;+852">中国香港</option></select><select id="txtSf"
+										name="txtSf" class="dt2_input_select"
+										onchange="AreaAnSfSelect(&#39;txtArea&#39;,&#39;txtSf&#39;,&#39;txtCity&#39;,this.value,&#39;&#39;);"><option
+												class="option1" value="">-省份-</option></select><select id="txtCity"
+										name="txtCity" class="dt2_input_select"
+										onchange="SetCityNum(this.value);"><option
+												class="option1" value="">-城市-</option></select></td>
+									<td class="td3"></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+						<table border="0" cellspacing="0" cellpadding="0" class="cont-Tab">
+							<tbody>
 
-    </div>
+								<tr>
+									<td class="td1"><span class="nec">*</span><span>邮箱：</span></td>
+									<td class="td2" style="color: #FF0000"><input type="text"
+										id="email" name="email" class="dt2_input_text"
+										style="ime-mode: disabled; width: 340px;" maxlength="50"
+										onblur="viewError(this,&#39;_isBox&#39;,&#39;邮箱&#39;)">&nbsp;&nbsp;重要信息，正确填写
+									</td>
+									<td class="td3"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="text-align: center; margin: 5px 5px 60px 5px;">
+					<img id="Img_V_next" alt="" src="./观众报名-填写基本信息_files/newXYB.jpg"
+						onclick="_testReg_01()">
+				</div>
 
-    </div>
-    <div style="width: 100%; background-color: #fff">
-        <div id="PF" style="background-color: #fff; border-top: solid 0px #fff;">
-            <p style="text-align:left;font-family:&#39;font-size:12px;">
-	<span style="font-family:微软雅黑, &#39;;"><span style="font-size:12px;">Powered by&nbsp;</span><strong><a href="" target="_blank"><span style="font-size:12px;">lichang</span></a><span style="font-size:12px;">&nbsp;&nbsp;</span></strong><span style="line-height:1.5;font-size:12px;">©2017-2018</span></span> 
-   </p>
-				<p style="text-align:right;font-family:&#39;font-size:12px;">
-					<span style="font-size:15px;line-height:1.5;font-family:微软雅黑, &#39;background-color:#FFFFFF;"><a href=""><span style="line-height:1.5;font-family:微软雅黑, &#39;font-size:12px;background-color:#FFFFFF;font-size:12px;">email：1575898486@qq.com</span></a></span> 
+				<input id="hidCountryFlag" type="hidden" value="">
+				<script type="text/javascript">PlaceN('姓名','txt_name','是  ','是  ','50');PlaceN('称谓','txtsex@slct_chehu','是  ','是  ','10');PlaceN('单位名称','companyName','是  ','是  ','100');PlaceN('通信地址','companyAddress','否  ','否  ','100');PlaceN('邮编','postcode','否  ','否  ','10');PlaceN('公司网址','Website','否  ','否  ','100');PlaceN('部门','txt_Department','否  ','否  ','50');PlaceN('职务','txt_JobTitle','是  ','否  ','50');PlaceN('手机','txt_LinkMob','是  ','是  ','50');PlaceN('电话','phone01','否  ','否  ','50');PlaceN('传真','fax01','否  ','否  ','50');PlaceN('邮箱','email','是  ','是  ','50');PlaceN('所在地','txtArea','是  ','是  ','');</script>
+				<script type="text/javascript"> function Judge(){if(_isNull('txt_name','姓名')){return false;}if(_isNull('txtsex@slct_chehu','称谓')){return false;}if(_isNull('companyName','单位名称')){return false;}if(_isNull('txt_LinkMob','手机')){return false;}if(_isMobile('txt_LinkMob')){return false;}if(_isNull('email','邮箱')){return false;}if(_isBox('email')){return false;}if(_phoneIsNull('txtArea','txtSf','txtCity','所在地')){return false;} return true; } </script>
+
+			</div>
+
+		</div>
+		<div style="width: 100%; background-color: #fff">
+			<div id="PF"
+				style="background-color: #fff; border-top: solid 0px #fff;">
+				<p
+					style="text-align: left; font-family: &amp; #39; font-size: 12px;">
+					<span style="font-family: 微软雅黑,&amp; #39;"><span
+						style="font-size: 12px;">Powered by&nbsp;</span><strong><a
+							href="" target="_blank"><span style="font-size: 12px;">lichang</span></a><span
+							style="font-size: 12px;">&nbsp;&nbsp;</span></strong><span
+						style="line-height: 1.5; font-size: 12px;">©2017-2018</span></span>
 				</p>
-				<p style="text-align:right;font-family:&#39;font-size:12px;">
-					<span style="font-family:Helvetica, Tahoma, Arial, &#39;line-height:22.5px;background-color:#FFFFFF;font-size:12px;">©2017-2018 展商服务管理系统  版权所有(豫ICP备050835XXXX号)</span> 
-				</p><div style="display:none;">版本号:2.7.2013.8.26</div>
-        </div>
-    </div>
-    <input type="hidden" id="PHId" value="PH">
-    
-     <div class="form_button">
-           <input type="button" value="提交"/>
-           <input type="reset" value="重置"/>
-     </div>
-    </form>
-    <script type="text/javascript">
+				<p
+					style="text-align: right; font-family: &amp; #39; font-size: 12px;">
+					<span
+						style="font-size: 15px; line-height: 1.5; font-family: 微软雅黑,&amp; #39; background-color: #FFFFFF;"><a
+						href=""><span
+							style="line-height: 1.5; font-family: 微软雅黑,&amp; #39; font-size: 12px; background-color: #FFFFFF; font-size: 12px;">email：1575898486@qq.com</span></a></span>
+				</p>
+				<p
+					style="text-align: right; font-family: &amp; #39; font-size: 12px;">
+					<span
+						style="font-family: Helvetica, Tahoma, Arial,&amp; #39; line-height: 22.5px; background-color: #FFFFFF; font-size: 12px;">©2017-2018
+						展商服务管理系统 版权所有(豫ICP备050835XXXX号)</span>
+				</p>
+				<div style="display: none;">版本号:2.7.2013.8.26</div>
+			</div>
+		</div>
+		<input type="hidden" id="PHId" value="PH">
+
+		<div class="form_button">
+			<input type="submit" value="提交" /> <input type="reset" value="重置" />
+		</div>
+	</form>
+	<script type="text/javascript">
         function _rsClick() {
             document.getElementById("rs").click();
         }
@@ -446,6 +393,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1
     </script>
 
 
-</body></html>
+</body>
+</html>
 </body>
 </html>

@@ -8,6 +8,8 @@ import com.jcz.entity.Visitor;
 
 public interface VisitorDao {
 	
+	public int addVisitor(Visitor visitor);
+	
 	public Visitor login(Visitor visitor);
 	
 	public List<Visitor> selectList(@Param("limit") int limit,@Param("offset") int offset);
