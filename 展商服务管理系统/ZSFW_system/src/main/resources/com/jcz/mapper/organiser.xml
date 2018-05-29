@@ -3,15 +3,33 @@
 <mapper namespace="com.jcz.dao.OrganiserDao">
 	<insert id="registerOrganiser" parameterType="com.jcz.entity.Organiser">
 		insert into
-		organiser(account,orgName,orgPwd,mobile,contact,location,email,theme,venueName,venueAddress,boothCount,state)
+		organiser(account,orgName,orgPwd,mobile,contact,location,email,theme,venueName,venueAddress,boothCount)
 		values(#{account},#{orgName},#{orgPwd},#{mobile},#{contact},#{location},#{email},#{theme},
-		#{venueName},#{venueAddress},#{boothCount},#{state})
+		#{venueName},#{venueAddress},#{boothCount})
 	</insert>
 	<select id="loginOrganiser" parameterType="map"
 		resultType="com.jcz.entity.Organiser">
 		select * from organiser where account=#{account} and
 		orgPwd=#{orgPwd}
 	</select>
+
+	<select id="selectList" resultType="com.jcz.entity.Organiser">
+		select *
+		from organiser
+		limit
+		#{limit},#{offset}
+	</select>
+	
+	<update id="updateState">
+		update organiser
+		set state = #{state}
+		where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from organiser
+		where id = #{id}
+	</delete>
 
 
 </mapper>

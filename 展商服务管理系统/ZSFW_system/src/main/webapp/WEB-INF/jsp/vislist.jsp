@@ -46,7 +46,10 @@
 				<td><span>${vis.job}</span></td>
 				<td><span>${vis.location}</span></td>
 				<td><span>${vis.email}</span></td>
-				<td><span>禁止登陆</span></td>
+				<td><span>
+					<c:if test="${vis.state == 0 }"><a href = "vis-updateState?id=${vis.id }&state=1">恢复登录</a></c:if>
+					<c:if test="${vis.state == 1 }"><a href = "vis-updateState?id=${vis.id }&state=0">禁止登录</a></c:if>
+				</span></td>
 				<td><span></span></td>
 			</tr>
 		</c:forEach>

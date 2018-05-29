@@ -74,6 +74,12 @@ public class Visitor {
 	public void setState(Integer state) {
 		this.state = state;
 	}
+	@Override
+	public String toString() {
+		return "Visitor [id=" + id + ", visPhone=" + visPhone + ", visPwd=" + visPwd + ", visName=" + visName
+				+ ", visSex=" + visSex + ", company=" + company + ", job=" + job + ", location=" + location + ", email="
+				+ email + ", state=" + state + "]";
+	}
 
 
 

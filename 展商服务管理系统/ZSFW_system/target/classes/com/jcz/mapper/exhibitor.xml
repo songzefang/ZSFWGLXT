@@ -33,7 +33,6 @@
 	<select id="selectList" resultType="com.jcz.entity.Exhibitor">
 		SELECT id,comName,state,registrant,registPhone
 		FROM exhibitor
-		limit #{limit},#{offset}
 	</select>
 
 	<select id="selectBasicInfo" resultType="com.jcz.entity.Exhibitor">

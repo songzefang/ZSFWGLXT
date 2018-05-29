@@ -19,10 +19,7 @@
 	</select>
 
 	<select id="selectList" resultType="com.jcz.entity.Visitor">
-		select *
-		from visitor
-		limit
-		#{limit},#{offset}
+		select * from visitor
 	</select>
 
 	<update id="updateState">

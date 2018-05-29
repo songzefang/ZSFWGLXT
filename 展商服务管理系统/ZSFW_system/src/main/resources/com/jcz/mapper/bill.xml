@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jcz.dao.BillDao">
+
+	<insert id="addBill" parameterType="com.jcz.entity.Bill">
+		insert into bill
+		(orgId,exhId,boothId,billCode,totalPrice,creationDate)
+		values
+		(#{orgId},#{exhId},#{boothId},#{billCode},#{totalPrice},#{creationDate})
+
+	</insert>
+
+	<select id="selectList" resultType="com.jcz.entity.Bill">
+		SELECT *
+		From bill
+	</select>
+
+	<update id="updateState">
+		update bill
+		set state = #{state}
+		where id = #{id}
+	</update>
+	
+	<select id="selectListByExhId" resultType="com.jcz.entity.Bill">
+		SELECT *
+		From bill
+		WHERE exhId = #{exhId}
+	</select>
+	
+	
+
+</mapper>

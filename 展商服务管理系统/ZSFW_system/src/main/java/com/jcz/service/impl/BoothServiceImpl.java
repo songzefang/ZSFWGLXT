@@ -69,5 +69,15 @@ public class BoothServiceImpl implements BoothService{
 		// TODO Auto-generated method stub
 		return boothDao.findById(id);
 	}
+	
+	public List<Booth> selectList(Integer orgId,int limit,int offset){
+		return boothDao.selectList(orgId, limit, offset);
+	}
+	
+	public int updateState(Integer id,Integer state) {
+		return boothDao.updateState(id, state);
+	}
+	
+	
 
 }

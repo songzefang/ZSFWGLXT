@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Booth {
 	private Integer id;
 	private Integer orgId;
-	
+	private String orgName;
 	private Integer style;
 	private Integer state;
 	private String boothCode;
@@ -23,6 +23,14 @@ public class Booth {
 		this.picture = picture;
 		this.size = size;
 		this.price = price;
+	}
+	
+	
+	public String getOrgName() {
+		return orgName;
+	}
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
 	}
 	public Integer getId() {
 		return id;

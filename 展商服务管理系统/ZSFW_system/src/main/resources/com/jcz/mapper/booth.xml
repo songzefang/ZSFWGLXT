@@ -15,6 +15,11 @@
 		select *
 		from booth where orgId=#{orgId} limit #{page},5
 	</select>
+	<select id="selectList"  resultType="com.jcz.entity.Booth">
+		select organiser.orgName,booth.*
+		from organiser,booth 
+		where orgId=#{orgId} 
+	</select>
 	<select id="count" resultType="int">
 		select count(*) from booth
 	</select>
@@ -32,5 +37,11 @@
 	<select id="findById" parameterType="int" resultType="com.jcz.entity.Booth">
 		select * from booth where id=#{id}
 	</select>
+	
+	<update id="updateState">
+	update booth
+	set state = #{state}
+	where id = #{id}
+	</update>
 
 </mapper>

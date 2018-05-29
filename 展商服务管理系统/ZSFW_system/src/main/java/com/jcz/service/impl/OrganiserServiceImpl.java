@@ -1,6 +1,7 @@
 package com.jcz.service.impl;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +33,16 @@ public class OrganiserServiceImpl implements OrganiserService{
 		// TODO Auto-generated method stub
 		return organiserDao.loginOrganiser(map);
 	}
+	
+	public List<Organiser> selectList(int limit,int offset){
+		return organiserDao.selectList(limit,offset);
+	}
+	
+	public int updateState(Integer id,Integer state) {
+		return organiserDao.updateState(id,state);
+	}
 
+	public int delete(Integer id) {
+		return organiserDao.delete(id);
+	}
 }

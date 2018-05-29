@@ -36,9 +36,10 @@ public class VisitorController {
 	
 	@RequestMapping("vislogin")
 	public String login(Visitor visitor) {
+		System.out.println("================================"+visitor.toString());
 		Visitor rVisitor = visitorService.login(visitor);
 		if(rVisitor!=null&&rVisitor.getState()!=0) {
-			return "zs-login";
+			return "redirect:gz-login.do";
 		}
 		return "redirect:activity.do";
 	}
@@ -63,7 +64,8 @@ public class VisitorController {
 		
 	}
 	
-	public String updateState(@RequestParam(defaultValue="0") int state,Integer id) {
+	@RequestMapping("/vis-updateState")
+	public String updateState(int state,Integer id) {
 		visitorService.updateState(state, id);
 		return "redirect:visList.do";
 	}

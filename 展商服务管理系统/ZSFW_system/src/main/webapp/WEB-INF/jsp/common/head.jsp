@@ -7,8 +7,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>展商服务管理系统</title>
-    <link type="text/css" rel="stylesheet" href="statics/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="statics/css/public.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/public.css" />
 </head>
 <body>
 <!--头部-->
@@ -17,7 +17,7 @@
         <div class="publicHeaderR">
             <p><span>下午好！</span><span style="color: #fff21b"> ${adminSession.adminName }</span> , 欢迎你！</p>
             <a href="logout.do">退出</a>
-        </div>
+      .c  </div>
     </header>
 <!--时间-->
     <section class="publicTime">
@@ -31,11 +31,11 @@
          <nav>
              <ul class="list">
               <li ><a href="bill.do">订单合同管理</a></li>
-              <li><a href="provider.do">主办方管理</a></li>
-              <li><a href="exhList.do">展商管理</a></li>
-              <li><a href="visList.do">参展管理</a></li>
-              <li><a href="pwdmodify.do">密码修改</a></li>
-              <li><a href="logout.do">退出系统</a></li>
+              <li><a href="${pageContext.request.contextPath }/organiser/orgList.do">主办方管理</a></li>
+              <li><a href="${pageContext.request.contextPath }/exhList.do">展商管理</a></li>
+              <li><a href="${pageContext.request.contextPath }/visList.do">参展管理</a></li>
+              <li><a href="${pageContext.request.contextPath }/pwdmodify.do">密码修改</a></li>
+              <li><a href="${pageContext.request.contextPath }/logout.do">退出系统</a></li>
              </ul>
          </nav>
      </div>
